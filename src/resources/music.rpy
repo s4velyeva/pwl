@@ -6,11 +6,15 @@ init:
     $ play_the_hero = PWL_MUS + 'play-the-hero.ogg'  # Mac Quayle - 406.2 Play The Hero
     $ distract_n_enter = PWL_MUS + 'distract-n-enter.ogg'  # Mac Quayle - 405.1 Distract & Enter
     $ irc_fantasy = PWL_MUS + 'irc-fantasy.ogg'  # Mac Quayle - 404.2 IRC Fantasy
-    $ i_m_crazy_too = PWL_MUS + 'i-m-crazy-too.ogg'  # Mac Quayle - 403.2 I'm Crazy Too
+    $ im_crazy_too = PWL_MUS + 'i-m-crazy-too.ogg'  # Mac Quayle - 403.2 I'm Crazy Too
     $ main_theme = PWL_MUS + 'main-theme.ogg'  # Mac Quayle - Mr. Robot Main Theme
     $ the_other_one = PWL_MUS + 'the-other-one.ogg'  # Mac Quayle - 402.2 The Other One
+    $ thumb_cad = PWL_MUS + 'thumb-cad.ogg'  # Mac Quayle - 405.3 Thumb CAD
 
     # -- cut versions -- #
     $ play_the_hero_cut = PWL_MUS + 'cut/play-the-hero.ogg'  # Mac Quayle - 406.2 Play The Hero
     $ distract_n_enter_cut = PWL_MUS + 'cut/distract-n-enter.ogg'  # Mac Quayle - 405.1 Distract & Enter
-    $ i_m_crazy_too_cut = PWL_MUS + 'cut/i-m-crazy-too.ogg'  # Mac Quayle - 403.2 I'm Crazy Too
+    $ im_crazy_too_cut = PWL_MUS + 'cut/i-m-crazy-too.ogg'  # Mac Quayle - 403.2 I'm Crazy Too
+    $ wicca = PWL_MUS + 'cut/wicca.ogg'  # AXIUS LINK - WICCA
+    $ thumb_cad_cut = PWL_MUS + 'cut/thumb-cad.ogg'  # Mac Quayle - 405.3 Thumb CAD
+

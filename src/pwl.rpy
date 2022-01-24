@@ -15,13 +15,7 @@ init python:
     PWL_SFX = 'mods/pwl/res/audio/sound/'
 
     PWL_NAMESPACE = 'pwl'
-    PWL_START_LABEL = 'pwl_JUDGE'
-
-    PWL_GIT = None
-    PWL_OS = None
-    PWL_ENABLE_LINUX_FEATURES = None
-
-    PWL_NOTICE_TEXT = 'You are using Windows.\nMost features will be disabled.'
+    PWL_START_LABEL = 'pwl_judge'
 
     # - Checks mod namespace conflicts - #
     def CheckModConflicts(namespace):
@@ -29,17 +23,7 @@ init python:
             return True
         else: return False
 
-    import os
-
-    PWL_GIT = True if os.path.exists('../.git') else False
-    PWL_OS = os.uname()[0]
-
-    if 'linux' in PWL_OS.lower():
-        PWL_ENABLE_LINUX_FEATURES = True 
-        PWL_NOTICE_TEXT = 'Huh, you are using Linux! Thanks!\nOSI4life))'
-
-    del os
-
-    mods[PWL_START_LABEL] = 'PROJECT OWL : HEADCRASHER'
+    mods[PWL_START_LABEL] = 'PROJECT OWL : {b}REBORN{/b}'
     config.developer = True
     config.autoreload = True
+# eof

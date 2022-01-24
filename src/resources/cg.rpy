@@ -1,3 +1,3 @@
 # ---- CG file ---- #
 init:
-    image cg prologue_monitor_custom = PWL_CG + 'prologue_monitor_4.jpg'
+    image cg project_owl_everywhere = PWL_CG + 'cg-project-owl-everywhere.jpg'
