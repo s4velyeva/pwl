@@ -1,22 +1,25 @@
-# PROJECT OWL : HEADCRASHER
-#### v0.0.8
-**Everlasting Summer** (*by Soviet Games*) modification.  <br/>
-*by vicsave*
+# project owl : reborn
 
-## PRE-HISTORY
+## version
 
-*23 y.o Alexey Vetrenny (Alex Windy) is a very regular guy.*  <br/>
-*He is going at work every day, drinking coffee with his "friends"..* <br/>
-*..under the sunlight..*
+- **New**
+	- [>] Updated README.md
+	- [+] Added more music, sfx, etc.
+	- [>] Rewrited judge code
+	- [>] Reformatted filenames and directories
+	- [+] Added script to convert all .mp3 to .ogg (*see src/resources/goodies*)
+	- [+] Added more backgrounds
+	- [-] Removed OS check
 
-*At night Alex is a hacker-avenger whose only purpose is to cleanse the world of rot.*  <br/>
-*Accidentally he gets in the "Sovyonok", a pioneer camp in the middle of 85'th.*  <br/>
+## installation
 
-*He doesn't remember anything about himself and whole 7 days he's trying to stay alive*<br/>
+- **Linux**
+	- Clone repo to your Everlasting Summer installation directory
+		- `git clone --depth=1 https://github.com/vicsave/pwl /es/path/mods/`
 
-## INSTALLATION
 
-Just clone repo in your *Everlasting Summer* path..  <br/>
-`git clone https://vicsave/pwl`
+- **Windows ( :( )**
+	- Navigate to your Everlasting Summer installation directory
+	- **Downloaded .zip archve**
+		- Just extract contents. Make sure that here is es/path/mods/pwl.
 
-..and run it from game menu.
