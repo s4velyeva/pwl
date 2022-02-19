@@ -15,7 +15,7 @@ init python:
     PWL_SFX = 'mods/pwl/res/audio/sound/'
 
     PWL_NAMESPACE = 'pwl'
-    PWL_START_LABEL = 'pwl_judge'
+    PWL_START_LABEL = 'pwl_main_menu_begin'
 
     # - Checks mod namespace conflicts - #
     def CheckModConflicts(namespace):
@@ -23,7 +23,7 @@ init python:
             return True
         else: return False
 
-    mods[PWL_START_LABEL] = 'PROJECT OWL : {b}REBORN{/b}'
+    mods[PWL_START_LABEL] = 'PROJ.OWL code: alice-amber'
     config.developer = True
     config.autoreload = True
 # eof

@@ -30,3 +30,12 @@ init:
         PWL_IMG + 'anim/secret/4.png'
         pause(0.1)
         repeat
+    
+    image pwl_noise:
+        "mods/pwl/res/img/anim/noise/1.png"
+        0.2
+        "mods/pwl/res/img/anim/noise/2.png"
+        0.2
+        "mods/pwl/res/img/anim/noise/3.png"
+        0.2
+        repeat
