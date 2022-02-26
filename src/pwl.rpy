@@ -26,4 +26,8 @@ init python:
     mods[PWL_START_LABEL] = 'PROJ.OWL code: alice-amber'
     config.developer = True
     config.autoreload = True
-# eof
+
+
+# init for variables
+init:
+    define persistent.show_now_playing = True

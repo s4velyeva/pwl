@@ -2,186 +2,83 @@ label pwl_judge:
 
     # -- cleanup -- #
     window hide
+    scene bg black with dissolve
     stop music fadeout 1.0
     stop ambience fadeout 1.0
     stop sound fadeout 1.0
 
+    # BETA
+    if persistent.show_now_playing:
+        show pwl_gui now_playing at top with dissolve
+
     pause(1.5)
+    play music alittlepush
+    window show
+    
+    th "...{w}привет, друг.{w} Ты…{w} слышишь меня?{w} Ты правда слышишь?.."
+    th "...{w}я хотела с тобой поговорить. Ты помнишь меня?.. Помнишь ведь, в-верно?.."
+    th "Умоляю, не забывай меня…{w} Прошу тебя…"
+    
+    window hide
+    pause(1)
+    window show
 
-    play music wicca
-    window show dissolve2
-
-    scene bg black with dissolve2
-
-    alwix "..Привет, друг."
-    alwix "..Почему ты никогда не отвечаешь?"
-    "..."
-    alwix "..Разумеется потому, что тебя нет..."
-    alwix "..Ладно, пора вставать."
-
-    window hide dissolve2
-    scene bg alex_room with dissolve
-    $ renpy.pause(4, hard=True)
-    scene bg alex_room_i1 with dissolve
-    $ renpy.pause(4, hard=True)
-    scene bg alex_room_i2 with dissolve
-    $ renpy.pause(4, hard=True)
-    scene bg alex_room_i3 with dissolve
-    $ renpy.pause(4, hard=True)
-
-    scene bg alex_room with dissolve
-    window hide dissolve2
-
-    "Я снова лежал на кровати."
-    "Радовался жизни."
-    "Думал о хорошем."
-    "Как и всегда.{w}{w} Но это только начало истории."
+    th "С-стой!{w} Н-не уходи…{w} Я тебе расскажу и покажу!..{w} П-п-покажу {b}всё{/b}!"
+    th "Лишь останься со мной…{w} Молю…{w} Мне…{w} М{w=0.3}-мне так одиноко…"
 
     window hide
     pause(1)
     window show
 
-    "Хотите, чтобы я рассказал вам её полностью, детишки?"
-    "Тогда слушайте внимательно. Это история великой любви хорошего человека."
+    th "...{w}ты помнишь меня?..{w} Должен помнить…{w} А если и забыл, ничего страшного…{w}{w}"
+    th "Это я, Алиса…{w} Твоя подруга…{w} Мы с тобой не в первый раз видимся..."
+    th "У меня мало времени…{w}{w} Запомни лишь одно…{w} Не дове-"
 
     window hide
-    scene bg black with dissolve2
-    stop music fadeout 6
-    pause(6)
-    play music play_the_hero fadein 2
-    scene bg alice_room_sunset with dissolve2
+    pause(1)
+    scene cg dv_alice_vik with Dissolve(5)
+    show pwl_noise with Dissolve(5)
+    pause(10)
+    scene bg black with dissolve
+    play music after_dark_muffled fadein 4
+    pause(4)
+    scene bg semen_room with Dissolve(8)
     window show
 
-    "..." "...{w}ничтожество."
-    "..." "...{w}не можешь даже свою жизнь наладить."
+    "Я вновь стояла у зеркала и смотрела на своё отражение."
+    dv "...{w}ничтожество...{w} Хотя нет, погоди, не ничтожество!{w} Нет!{w} Я велика…{w} Я хороша…{w} Я известна…{w}{w}"
+    
+    window hide
+    show blink
+    pause(0.8)
+    window show
+
+    dv "...{w}ничтожество.{w} Сама себя оправдываешь.{w} Не стыдно?..{w} Хотя почему мне должно быть стыдно?"
 
     window hide
+    hide blink
+    show unblink
+    pause(1)
+    window show
+
+    dv "...{w}стыдно."
+    dv "...{w}скучно."
+
+    window hide
+    show blink
+    pause(2)
+    window show
+
+    dv "...{w}не скучно.{w} Очень даже вес-"
+    dv "..."
+    dv "..."
+
+    "Я начала хнычить.{w} Я сама не поняла, почему.{w} Позже, я буквально начала захлёбываться рыданиями."
+    "Я кричала, я била кровать, но позже…{w}{w} Я успокоилась."
+
+    window hide
+    hide blink
+    show unblink
     stop music fadeout 2
-    play ambience silence fadein 2
-    show black with dissolve
-    pause(2)
-    window show
-
-    th "...привет, друг. Не знала, что ты здесь."
-    th "...ты ведь не знаешь, что происходит, верно?"
-    th "...я расскажу.{w}{w} Но сначала давай прогуляемся."
-
-    window hide
-    hide black with dissolve
     pause(1)
-    window show
-
-    th "Последние 3 дня я потратила на одного человека."
-    th "Вроде бы ничем не примечателен.{w} Ходит в кафе, болтает там с друзьями."
-    th "Иногда, как и все нормальные люди, приходит в это же кафе погрустить в одиночестве."
-    th "Я тоже туда хожу.{w} Изредка."
-    th "Целый день я потратила на раздумия, и под конец решила..."
-    th "Я должна о нём узнать всё."
-
-    window hide
-    show black with dissolve
-    pause(2)
-    play music irc_fantasy
-    hide black with dissolve
-    window show
-
-    th "Взломать его было сложнее, чем я думала."
-    th "Судя по всему, он знает толк в этом деле."
-    th "Мне нужно было пробиться через фаервол его сети, а потом и через систему безопасности линукса."
-    th "Забавно, что он использует Кали. Я думала он ламер."
-    th "Он часто летает по онионам, но что он там делает я не в силах узнать."
-    th "В принципе, я нашла у него кое-какой документ..."
-    th "Судя по всему он тайно работает с местной корпорацией."
-
-    window hide
-    show anim project_owl with dissolve2
-    pause(1)
-    window show
-
-    th "...{w}Проект «СОВА».{w} Они протянули свои щупальца во многие сферы жизни, в том числе за границей."
-    th "Мои знакомые из Америки называют корпорацию Prowler, от слов Project OWL, крадущийся."
-    th "Что?{w} Ты не понимаешь, почему так? Сейчас объясню."
-
-    window hide
-    stop music fadeout 5
-    scene bg black with dissolve2
-    show anim loading with dissolve
-    pause(5)
-    hide anim loading with dissolve
-    play music thumb_cad fadein 2
-
-    th "Корпорация пытается показаться всем хорошей, но это не так."
-    th "Уже как 4 года они похищают мирных граждан для своих экспериментов."
-    th "Никто об этом не знает, а у заявлений о пропаже просто истекают сроки."
-    th "Никто не пытается их найти.{w} Потому что незачем."
-    th "Мне неизвестно, куда именно пропадают граждане, и что с ними делают..."
-    th "Но одно мне известно точно."
-    th "{b}Это.{/b}" with hpunch
-    th "{b}Пора.{/b}" with hpunch
-    th "{b}Прекращать.{/b}" with hpunch
-
-    window hide
-    $ renpy.pause(1.5, hard=True)
-    window show
-
-    "..."
-    "Я собралась, взяла ноутбук, и пошла в то самое кафе."
-    "...{w}Идя по улице я везде видела их."
-    "...{w}Люди в черных масках."
-    "Многие говорят, что они появляются перед тем, как тебя заберёт к себе корпорация."
-    "Я постаралась не обращать на это внимания и идти дальше."
-    "..."
-
-    scene bg sudo_cafe with Dissolve(4)
-
-    "Спустя 15 минут я уже была на месте и ждала его."
-    "Алексей Ветренный.{w} 23 года.{w} Фрилансер.{w} Судя по моим находкам - работает на Проект «СОВА».{w} Не женат, в отношениях состоял всего два раза..."
-    "...{w}Хакер. Известен как alw!xer0z, awwixo, или же MRSK. В основном обитает на Neboard."
-    
-    th "Пора выяснить, почему же ты предал нас, Лёшенька..."
-    "..."
-
-    th "Пришёл!"
-    "..." "Алексей?"
-    alwix "Да, я. Чем могу быть полезен?"
-    "Его противная улыбка и жизнерадостность...{w} С ума меня сводят. Блевать охота."
-    "..." "Ахем.{w} Не составите девушке компанию на вечер?" with vpunch
-    alwix "Конечно! Погодите секунду, я сделаю заказ."
-    th "Ага, ага...{w} Давай, Лёшка..."
-    "Я посмотрела в окно.{w} На улице стояли пятеро парней в черных масках и плащах, пара из них покуривала сигареты."
-    "Мне стало страшно."
-
-    "..."
-    alwix "Чтож, вот и всё."
-    "Он сел напротив меня."
-    alwix "Так, как вас зовут?"
-
-    # getting surname
-    $ surname = renpy.input("Нужно придумать псевдоним...")
-    $ surname = surname.strip()
-
-    # if user didnt input anything
-    if surname == "":
-        $ surname = "Алиска"
-    
-    "%{surname}s" "%{surname}s"
-    alwix "Ага, значит, %{surname}s?"
-
-    window hide
-    show black with dissolve
-    hide black with dissolve
-    window show
-
-    th "Конечно я тебе верю...{w} {i}Алиса Двачевская.{/i}"
-    th "Что же ты решила ко мне наведаться лично?"
-    
-    alwix "Ам...{w} Хм. Может, кофе, %{surname}s?"
-    dv "Да, я бы не отказалась, спасибо."
-
-    window hide
-    $ renpy.pause(1, hard=True)
-    window show
-
-    th "В чём же подвох...?"
-    alwix "Официант!...{w} Добавьте два капуччино к моему заказу, пожалуйста!"
     return
