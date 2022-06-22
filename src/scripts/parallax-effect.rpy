@@ -1,7 +1,4 @@
-
-# hippity hoppity
-    # ur code
-        # is now my property :P
+# hippity hoppity, ur code is now my property :P
 # thanks to aquapaulo (github.com/aquapaulo)!
 
 init python:
@@ -47,8 +44,7 @@ init python:
             hover = ev.type == pygame.MOUSEMOTION
             click = ev.type == pygame.MOUSEBUTTONDOWN
             focus = pygame.mouse.get_focused()
-            
-            
+
             if hover:
                 if (x != self.x) or (y != self.y) or click:
                     self.x = -x /self.paramod

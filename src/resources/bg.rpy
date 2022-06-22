@@ -8,4 +8,4 @@ init:
     image bg alex_room_i4 = PWL_BG + 'bg-alex-room-intro-4.jpg'
 
     image bg alice_room_sunset = PWL_BG + 'bg-alice-room-sunset.jpg'
-    image bg sudo_cafe = PWL_BG + 'bg-sudo-cafe.jpg'
+    image bg default_background = Solid("#101010")

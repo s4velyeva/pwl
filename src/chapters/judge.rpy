@@ -14,11 +14,11 @@ label pwl_judge:
     pause(1.5)
     play music alittlepush
     window show
-    
+
     th "...{w}привет, друг.{w} Ты…{w} слышишь меня?{w} Ты правда слышишь?.."
     th "...{w}я хотела с тобой поговорить. Ты помнишь меня?.. Помнишь ведь, в-верно?.."
     th "Умоляю, не забывай меня…{w} Прошу тебя…"
-    
+
     window hide
     pause(1)
     window show

@@ -1,0 +1,28 @@
+-= VERSION: 0.0.1-build20220622-git =-
+
+- [>] Updated README.md
+- [+] Added more music, sfx, etc.
+- [>] Rewrited judge code
+- [>] Reformatted filenames and directories
+- [+] Added script to convert all .mp3 to .ogg
+- [+] Added more backgrounds
+- [-] Removed OS check
+
+-= VERSION: 0.0.1-build20220623-git =-
+
+- [>] Updated menu
+- [>] Updated menu assets
+- [>] Cleaned up
+- [>] Updated README.md
+- [>] Reworked main menu images, applied modification's color scheme
+- [>] Updated configuration
+- [>] Updated music list
+- [>] Updated some of CG and BG
+- [+] Added CHANGELOG
+- [+] Added OST by rekendo - Psycho Code (huge thanks)
+- [+] Added logo for "Mod Menu" modification
+- [+] Added font "Code New Roman Nerd"
+- [+] Added button hover and click sounds (work in progress)
+- [-] Removed "sudo cafe" background
+- [x] Bug: Need to relaunch mod from menu in case of traceback at launch
+- [x] Bug: Hover sound resets parallax effects

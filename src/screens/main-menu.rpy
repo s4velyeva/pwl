@@ -5,10 +5,10 @@ init:
 
 
 screen pwl_main_menu():
-    tag menu  # - allows us to use it as menu
+    tag menu  # allows us to use it as menu
 
-    # - menu part
-    add CursorTracker("mods/pwl/res/menu/images/background.png", 20) at opacity_dissolve
+    # menu part
+    add CursorTracker("mods/pwl/res/menu/images/background.png", 10) at opacity_dissolve
     add CursorTracker("mods/pwl/res/menu/images/alice-changed.png", 15) at opacity_dissolve:
         xpos 809
         ypos 462
@@ -37,10 +37,10 @@ screen pwl_in_development_notice:
 label pwl_main_menu_begin:
     # -- cleanup -- #
     window hide
-    scene bg black with dissolve2
+    scene bg default_background with dissolve2
     stop music fadeout 1.0
     stop ambience fadeout 1.0
     stop sound fadeout 1.0
 
-    play music thumb_cad fadein 0.5
+    play music psycho_code fadein 0.5
     call screen pwl_main_menu
