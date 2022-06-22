@@ -6,6 +6,9 @@ init:
 
 screen pwl_main_menu():
     tag menu  # allows us to use it as menu
+    modal True
+
+    zorder 999
 
     # menu part
     add CursorTracker("mods/pwl/res/menu/images/background.png", 10) at opacity_dissolve
@@ -35,12 +38,27 @@ screen pwl_in_development_notice:
 
 
 label pwl_main_menu_begin:
-    # -- cleanup -- #
+    # cleanup
     window hide
-    scene bg default_background with dissolve2
+    scene bg black with dissolve2
     stop music fadeout 1.0
     stop ambience fadeout 1.0
     stop sound fadeout 1.0
 
+    # screen prediction optimizes it's appear process
+    $ renpy.start_predict_screen("pwl_main_menu")
+    $ renpy.start_predict_screen("pwl_in_development_notice")
+    
+    # settings
+    $ persistent.sprite_time = 'night'
+    $ night_time()
+    $ renpy.block_rollback()
+
     play music psycho_code fadein 0.5
+    show image Text('{size=70}{font=mods/pwl/res/fonts/codenewroman.otf}Prototype TM{/font}{/size}') at truecenter with dspr
+    
+    $ renpy.pause(1.0, hard=True)
+    scene bg default_background with dissolve
+
     call screen pwl_main_menu
+    show anim noise

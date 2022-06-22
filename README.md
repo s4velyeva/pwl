@@ -2,7 +2,7 @@
 
 <h2 align="center"><b>CHANGELOG</b></h2>
 
-### **version: 0.0.1-build20220623-git**
+### **version: 0.0.2-build20220623-git**
 - [>] Updated menu
 - [>] Updated menu assets
 - [>] Cleaned up
@@ -17,8 +17,9 @@
 - [+] Added font "Code New Roman Nerd"
 - [+] Added button hover and click sounds (work in progress)
 - [-] Removed "sudo cafe" background
-- [x] Bug: Need to relaunch mod from menu in case of traceback at launch
+- [x] Bug: In case of traceback on launch Ignore it and relaunch mod
 - [x] Bug: Hover sound resets parallax effects
+- [:] Some fixes-s-s-s-s :3
 
 <h2 align="center"><b>INSTALLATION</b></h2>
 

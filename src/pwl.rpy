@@ -1,4 +1,4 @@
-# Copyright (c) 2022 rekendo-ua
+# Copyright (c) 2022 s4velyeva
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,15 +31,19 @@ init python:
 
     PWL_VERSION = '0.0.1-build20220622-git'
 
+    import socket
+    if (socket.gethostname() == 'sigkill'):
+        config.developer = True
+        config.autoreload = True
+    del socket
+
     # checks mod namespace conflicts
     def CheckModConflicts(namespace):
         if namespace in mods:
             return True
         else: return False
 
-    mods[PWL_START_LABEL] = 'PROJ.OWL code: alice-amber'
-    config.developer = True
-    config.autoreload = True
+    mods[PWL_START_LABEL] = 'PROJ.OWL: Reboot: alice-amber'
 
     try:
         modsImages[PWL_START_LABEL] = (PWL_IMG + 'etc/mods_image_logo_320x180.jpg', False, PWL_START_LABEL)
